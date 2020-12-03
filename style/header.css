@@ -51,11 +51,15 @@ header nav a:hover {
 
 footer {
   border-top: 1px solid #ccc;
+}
+
+.footer {
+  align-items: center;
   display: flex;
   font-size: 2.5rem;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  max-width: 1180px;
 }
 
 footer h3 {

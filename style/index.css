@@ -1,7 +1,7 @@
 /* --------------------------------------- */
 /* Google Fonts Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Orbitron', sans-serif; */
 
@@ -74,33 +74,52 @@ a {
 
 .heading {
   display: flex;
+  justify-content: flex-start;
 }
 
 .heading .main-image {
   background: url(https://i.pinimg.com/originals/cd/53/99/cd53995b1c02ca70f90ff3d105fb51dc.jpg);
-  width: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #777;
   height: 400px;
-  flex-basis: 600px;
-  background-size: 100%;
-  background-position-y: -100px;
+  margin: 2rem;
+  width: 600px;
 }
 
 .heading .intro {
-  width: 500px;
-}
-
-/* .heading .main-image {
-  align-items: center;
-
-  box-sizing: border-box;
-  display: flex;
-  height: 400px;
-  justify-content: center;
-  min-width: 600px;
   margin: 2rem;
-  overflow: hidden;
+  width: 500px;
+  align-self: flex-end;
 }
 
-.heading .main-image img {
-  width: 60rem;
-} */
+.intro h2 {
+  font-size: 3rem;
+  margin: 12rem 0 3rem 0;
+}
+
+.intro a {
+  background-color: #fbfbfb;
+  border: 1px solid #777;
+  color: #222;
+  display: block;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  width: 14rem;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+}
+
+.intro a:hover {
+  background-color: blue;
+  color: white;
+  text-shadow: 1px 1px 2px #888;
+}
+
+.intro p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+}

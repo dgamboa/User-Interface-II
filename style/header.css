@@ -67,12 +67,11 @@ footer h3 {
   text-align: center;
 }
 
-footer a { 
+.footer > a { 
   background-color: #fbfbfb;
   border: 1px solid #777;
   color: #222;
   font-size: 1.5rem;
-  margin-bottom: 50px;
   max-width: 14rem;
   min-width: 8rem;
   padding: 10px;
@@ -81,8 +80,27 @@ footer a {
   width: 10%;
 }
 
-footer a:hover {
+.footer > a:hover {
   background-color: green;
   color: white;
   text-shadow: 1px 1px 2px #333;
+}
+
+footer .social {
+  display: flex;
+}
+
+.social i {
+  color: black;
+  margin: 40px 15px;
+  padding: 0 1px;
+}
+
+.social i:hover {
+  background-color: yellow;
+}
+
+.footer p {
+  font-size: 1.3rem;
+  margin-bottom: 60px;
 }

@@ -72,3 +72,35 @@ a {
 /* --------------------------------------- */
 /* Heading Styles */
 
+.heading {
+  display: flex;
+}
+
+.heading .main-image {
+  background: url(https://i.pinimg.com/originals/cd/53/99/cd53995b1c02ca70f90ff3d105fb51dc.jpg);
+  width: 600px;
+  height: 400px;
+  flex-basis: 600px;
+  background-size: 100%;
+  background-position-y: -100px;
+}
+
+.heading .intro {
+  width: 500px;
+}
+
+/* .heading .main-image {
+  align-items: center;
+
+  box-sizing: border-box;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  min-width: 600px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.heading .main-image img {
+  width: 60rem;
+} */

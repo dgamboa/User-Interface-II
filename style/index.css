@@ -142,11 +142,14 @@ a {
 
 .gallery-image img {
   border: 1px solid #777;
+  filter: grayscale(60%);
   opacity: 0.5;
+  transition: 0.3s;  
 }
 
 .gallery-image img:hover {
   opacity: 1;
+  filter: grayscale(0%);
 }
 
 .gallery-image p {

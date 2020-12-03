@@ -1,1 +1,159 @@
-/* Add CSS styling here */
+/* --------------------------------------- */
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@250;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+
+
+
+/* --------------------------------------- */
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --------------------------------------- */
+/* General Styles */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}
+
+
+/* --------------------------------------- */
+/* Heading Styles */
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.heading .main-image {
+  background: url(https://i.pinimg.com/originals/cd/53/99/cd53995b1c02ca70f90ff3d105fb51dc.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #777;
+  height: 400px;
+  margin: 2rem;
+  width: 600px;
+}
+
+.heading .intro {
+  margin: 2rem;
+  width: 500px;
+  align-self: flex-end;
+}
+
+.intro h2 {
+  font-size: 3rem;
+  margin: 12rem 0 3rem 0;
+}
+
+.intro a {
+  background-color: #fbfbfb;
+  border: 1px solid #777;
+  color: #222;
+  display: block;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  width: 14rem;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+}
+
+.intro a:hover {
+  background-color: blue;
+  color: white;
+  text-shadow: 1px 1px 2px #888;
+}
+
+.intro p {
+  font-size: 2.1rem;
+  font-weight: 250;
+  line-height: 2.8rem;
+}
+
+
+/* --------------------------------------- */
+/* Gallery Styles */
+
+.gallery {
+  display: flex;
+  margin: 30px 0 50px 0;
+  max-width: 1180px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-image {
+  margin: 20px;
+}
+
+.gallery-image img {
+  border: 1px solid #777;
+  filter: grayscale(60%);
+  opacity: 0.5;
+  transition: 0.3s;  
+}
+
+.gallery-image img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.gallery-image p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  text-align: center;
+}

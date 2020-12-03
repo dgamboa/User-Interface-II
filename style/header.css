@@ -1,0 +1,47 @@
+/* --------------------------------------- */
+/* Heading Styles */
+
+header {
+  background-color: #ddd;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: 30px 20px;
+  text-shadow: 1px 1px 3px white;
+}
+
+header nav {
+  display: flex;
+  margin-left: 40px;
+}
+
+header nav a {
+  background-color: #fbfbfb;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  border-right: 1px solid #777;
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  max-width: 14rem;
+  min-width: 8rem;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+  width: 10%;
+}
+
+header nav a:first-child {
+  border-left: 1px solid #777;
+}
+
+header nav a:hover {
+  background-color: orange;
+  color: white;
+  text-shadow: 1px 1px 2px #888;
+}

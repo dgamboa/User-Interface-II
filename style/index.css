@@ -1,4 +1,13 @@
 /* --------------------------------------- */
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+
+
+
+/* --------------------------------------- */
 /* CSS Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -48,3 +57,13 @@ table {
 
 /* --------------------------------------- */
 /* General Styles */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}

@@ -98,12 +98,11 @@ a {
 .heading .intro {
   margin: 2rem;
   width: 500px;
-  align-self: flex-end;
 }
 
 .intro h2 {
   font-size: 3rem;
-  margin: 12rem 0 3rem 0;
+  margin: 8rem 0 3rem 0;
 }
 
 .intro a {

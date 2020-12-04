@@ -59,7 +59,7 @@ footer {
   font-size: 2.5rem;
   flex-flow: column nowrap;
   justify-content: center;
-  max-width: 1180px;
+  /* max-width: 1180px; */
 }
 
 footer h3 {

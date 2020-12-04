@@ -163,3 +163,13 @@ a {
   margin-top: 5px;
   text-align: center;
 }
+
+@media only screen and (max-width: 480px) {
+  .heading .main-image {
+    display: none;
+  }
+  
+  .intro h2 {
+    display: none;
+  }
+}

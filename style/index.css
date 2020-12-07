@@ -307,15 +307,54 @@ footer .social {
 }
 
 @media only screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
   header nav {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  header nav a {
+    border-left: 1px solid #777;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 1rem;
+    width: 25vw;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #777;
+    margin-bottom: 2rem;
   }
 
   .heading .main-image {
-    display: none;
+    width: 90vw;
   }
-  
-  .intro h2 {
-    display: none;
+
+  .intro a {
+    width: 25vw;
   }
+
+  .gallery {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .gallery-image, .gallery-image img {
+    width: 35vw;
+  }
+
 }

@@ -368,3 +368,10 @@ footer .social {
     display: none;
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  /* Remove the main image, name and link to projects for small mobile phones */
+    .gallery {
+      width: 100%;
+    }
+  }

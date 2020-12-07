@@ -1,1 +1,377 @@
-/* Add CSS styling here */
+/* --------------------------------------- */
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@250;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+
+
+
+/* --------------------------------------- */
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --------------------------------------- */
+/* General Styles */
+
+/* * {
+  border: 1px solid gray;
+} */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}
+
+
+/* --------------------------------------- */
+/* Header & Footer Styles */
+
+header, footer {
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%;
+}
+
+header {
+  border-bottom: 1px solid #bbb;
+  box-shadow: 0 2px 3px #ccc;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: 3rem 2rem;
+  text-shadow: 1px 1px 3px white;
+}
+
+header nav {
+  display: flex;
+  margin-left: 4rem;
+}
+
+header nav a {
+  background-color: #fbfbfb;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  border-right: 1px solid #777;
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 14rem;
+  min-width: 8rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+  width: 10%;
+}
+
+header nav a:first-child {
+  border-left: 1px solid #777;
+}
+
+header nav a:hover {
+  background-color: orange;
+  color: white;
+  text-shadow: 1px 1px 2px #888;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  font-size: 2.5rem;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+footer h3 {
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+.footer > a { 
+  background-color: #fbfbfb;
+  border: 1px solid #777;
+  color: #222;
+  font-size: 1.5rem;
+  max-width: 14rem;
+  min-width: 8rem;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+  width: 10%;
+}
+
+.footer > a:hover {
+  background-color: green;
+  color: white;
+  text-shadow: 1px 1px 2px #333;
+}
+
+footer .social {
+  display: flex;
+}
+
+.social i {
+  color: black;
+  margin: 4rem 1.5rem;
+  padding: 0 1rem;
+}
+
+.social i:hover {
+  background-color: yellow;
+}
+
+.footer p {
+  font-size: 1.3rem;
+  margin-bottom: 6rem;
+}
+
+
+/* --------------------------------------- */
+/* Heading Styles */
+
+.heading {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading .main-image {
+  background: url(https://i.pinimg.com/originals/cd/53/99/cd53995b1c02ca70f90ff3d105fb51dc.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #777;
+  height: 40rem;
+  margin: 2rem;
+  width: 60rem;
+}
+
+.heading .intro {
+  margin: 2rem;
+  width: 50rem;
+}
+
+.intro h2 {
+  font-size: 3rem;
+  margin: 8rem 0 3rem 0;
+}
+
+.intro a {
+  background-color: #fbfbfb;
+  border: 1px solid #777;
+  color: #222;
+  display: block;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  width: 14rem;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #eee;
+}
+
+.intro a:hover {
+  background-color: blue;
+  color: white;
+  text-shadow: 1px 1px 2px #888;
+}
+
+.intro p {
+  font-size: 2rem;
+  font-weight: 250;
+  line-height: 2.8rem;
+}
+
+
+/* --------------------------------------- */
+/* Gallery Styles */
+
+.gallery {
+  display: flex;
+  margin: 3rem auto 5rem auto;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  margin: 2rem;
+}
+
+.gallery-image img {
+  border: 1px solid #777;
+  filter: grayscale(60%);
+  opacity: 0.5;
+  transition: 0.3s;  
+}
+
+.gallery-image img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.gallery-image p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
+/* --------------------------------------- */
+/* Small Screens and Mobile Styles */
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    flex-direction: column;
+  }
+
+  .heading .intro {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .intro h2 {
+    margin: 0;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .footer a {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  header nav a {
+    border-left: 1px solid #777;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 1rem;
+    width: 25vw;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #777;
+    margin-bottom: 2rem;
+  }
+
+  .heading .main-image {
+    width: 90vw;
+  }
+
+  .intro a {
+    width: 25vw;
+  }
+
+  .gallery {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .gallery-image, .gallery-image img {
+    width: 35vw;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+/* Remove the main image, name and link to projects for small mobile phones */
+  .heading .main-image, .intro h2, .intro a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  /* Remove the main image, name and link to projects for small mobile phones */
+    .gallery {
+      width: 100%;
+    }
+  }

@@ -25,7 +25,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -57,6 +57,10 @@ table {
 
 /* --------------------------------------- */
 /* General Styles */
+
+/* * {
+  border: 1px solid gray;
+} */
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -90,13 +94,13 @@ header {
 
 header h1 {
   font-size: 5rem;
-  margin: 30px 20px;
+  margin: 3rem 2rem;
   text-shadow: 1px 1px 3px white;
 }
 
 header nav {
   display: flex;
-  margin-left: 40px;
+  margin-left: 4rem;
 }
 
 header nav a {
@@ -106,10 +110,10 @@ header nav a {
   border-right: 1px solid #777;
   color: #222;
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   max-width: 14rem;
   min-width: 8rem;
-  padding: 10px;
+  padding: 1.5rem;
   text-align: center;
   text-shadow: 1px 1px 2px #eee;
   width: 10%;
@@ -138,7 +142,7 @@ footer {
 }
 
 footer h3 {
-  margin: 30px 0 20px 0;
+  margin: 3rem 0 2rem 0;
   text-align: center;
 }
 
@@ -149,7 +153,7 @@ footer h3 {
   font-size: 1.5rem;
   max-width: 14rem;
   min-width: 8rem;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px #eee;
   width: 10%;
@@ -167,8 +171,8 @@ footer .social {
 
 .social i {
   color: black;
-  margin: 40px 15px;
-  padding: 0 1px;
+  margin: 4rem 1.5rem;
+  padding: 0 1rem;
 }
 
 .social i:hover {
@@ -177,7 +181,7 @@ footer .social {
 
 .footer p {
   font-size: 1.3rem;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 
@@ -186,9 +190,9 @@ footer .social {
 
 .heading {
   margin: 0 auto;
-  max-width: 1180px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading .main-image {
@@ -197,14 +201,14 @@ footer .social {
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #777;
-  height: 400px;
+  height: 40rem;
   margin: 2rem;
-  width: 600px;
+  width: 60rem;
 }
 
 .heading .intro {
   margin: 2rem;
-  width: 500px;
+  width: 50rem;
 }
 
 .intro h2 {
@@ -218,9 +222,9 @@ footer .social {
   color: #222;
   display: block;
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin: 2rem 0;
   width: 14rem;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px #eee;
 }
@@ -243,14 +247,14 @@ footer .social {
 
 .gallery {
   display: flex;
-  margin: 30px auto 50px auto;
-  max-width: 1180px;
+  margin: 3rem auto 5rem auto;
+  width: 80%;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .gallery-image {
-  margin: 20px;
+  margin: 2rem;
 }
 
 .gallery-image img {
@@ -267,18 +271,8 @@ footer .social {
 
 .gallery-image p {
   font-size: 1.5rem;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   text-align: center;
-}
-
-@media only screen and (max-width: 480px) {
-  .heading .main-image {
-    display: none;
-  }
-  
-  .intro h2 {
-    display: none;
-  }
 }
 
 
@@ -286,11 +280,39 @@ footer .social {
 /* Small Screens and Mobile Styles */
 
 @media only screen and (max-width: 800px) {
+  .heading {
+    flex-direction: column;
+  }
+
+  .heading .intro {
+    width: 90%;
+    margin: 0;
+  }
+
+  .intro h2, .intro a {
+    display: none;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .footer a {
+    width: 100%;
+  }
 
 }
 
 @media only screen and (max-width: 500px) {
   header nav {
+    display: none;
+  }
+
+  .heading .main-image {
+    display: none;
+  }
+  
+  .intro h2 {
     display: none;
   }
 }

@@ -357,4 +357,14 @@ footer .social {
     width: 35vw;
   }
 
+  footer {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+/* Remove the main image, name and link to projects for small mobile phones */
+  .heading .main-image, .intro h2, .intro a {
+    display: none;
+  }
 }

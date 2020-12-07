@@ -48,8 +48,8 @@ Use the checklist below to guide your work today. Your final product should be p
 
 Once you finish the minimum viable project, work on any of the following stretch goals:
 
-- [ ]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
-  - [ ]  iPhone: 360×640
+- [x]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
+  - [x]  iPhone: 360×640
   - [ ]  Laptop: 1366×768
   - [ ]  Widescreen: 1920×1080
 - [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
